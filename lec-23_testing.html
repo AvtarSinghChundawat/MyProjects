@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avtar's First Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        body{
+            background-color: rgb(0, 251, 255);
+            text-align: left;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 7px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none; /* To remove bullets or the unordered numbering */
+            padding: 7px 7px; 
+            margin:11px 12px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color:white;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover{
+            background-color: white;
+            color:black;
+            border-radius:10px;
+            padding:5px;
+            border:2px solid orangered;
+        }
+
+        .navbar input{
+            border:2px solid black;
+            border-radius: 4px;
+            padding:3px;
+            margin-right:-4px;
+        }
+
+        .navbar input:hover{
+            border:2px solid orangered;
+            border-radius:4px;
+        }
+
+        .search{
+            float:right;
+            padding: 7px 7px; 
+            margin:11px 12px
+        }
+
+    </style>
+    <style>
+               * {
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        .container {
+            border: 3px solid black;
+            background-color: orange;
+            padding: 11px 0px 10px 46px;
+            margin: 100px auto;
+            width: 600px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 7px;
+            border: 3px solid transparent;
+            /* when i gave this 3px , i made a space of 3px in y-axis that helped me in preventing the expansion of container height when i hovered on contact us button , you can check what i am talking about by commenting out the border in btn class */
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        /* .btn:hover {
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+        } */
+
+        a {
+            /* This is a pseudo selector */
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            /* This is a pseudo selector */
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+        } 
+
+        /* a:visited{    
+            background-color: green;
+        } /* This is a pseudo selector , don't know why it is not working as expected */
+
+        a:active {
+            background-color: blue;
+            color: white;
+        } 
+
+        #cont1{
+            text-align: justify;
+            padding:16px 43px 30px 43px;
+        }
+
+        #cont1 details summary:hover{
+            color:white;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://www.youtube.com/" target="_blank">Home</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Human" target="_blank">About</a></li>
+                <li><a href="https://chat.openai.com/" target="_blank">Services</a></li>
+                <li><a href="https://www.instagram.com/avtar_singhchundawat/" target="_blank">Contact Us</a></li>
+                <div class="search">
+                <input type="search" name="Search" id="search" placeholder="Search This Website...">
+            </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="cont1">
+        <h3 style="font-size:23px">Unleashing the Power of Code : A Journey into the Heart of Innovation</h3>
+        <p style="font-size: 17px;">
+            In the realm of endless possibilities, where creativity and logic intertwine, coding emerges as the universal language shaping our digital reality. Coding is not merely about strings of characters and algorithms; it's the art of turning imagination into functionality. Like a maestro orchestrating a symphony, a coder weaves intricate patterns of logic to breathe life into software and applications.
+            <details><summary>More</summary><p>Coding transcends the boundaries of time and space, allowing dreamers to build the future with the strokes of their keyboards. It's a dynamic voyage, a perpetual learning curve where each line of code is a brushstroke on the canvas of innovation. As we navigate the labyrinth of syntax and problem-solving, we discover the profound impact of our code on the world around us.</p>
+                <p> In this ever-evolving landscape, coding is the key to unlocking new frontiers. It empowers us to automate mundane tasks, unravel the mysteries of data, and create immersive experiences that redefine how we interact with technology. From the elegance of a well-optimized algorithm to the sheer might of scalable applications, coding is the engine propelling us towards a future limited only by our imagination.</p>
+               
+                <p> The beauty of coding lies not only in its functionality but also in its collaborative nature. The global coding community is a melting pot of diverse minds, each contributing a unique perspective to the collective pool of knowledge. Discussions in forums, open-source contributions, and collaborative projects underscore the communal spirit that fuels technological progress.</p>
+               <p>In essence, coding is a passport to innovation, a bridge between dreams and reality. It's the toolset of modern visionaries, enabling them to sculpt the digital landscapes of tomorrow. So, as we embark on this odyssey of code, let's embrace the challenges, celebrate the victories, and revel in the sheer joy of transforming ideas into executable wonders. After all, in the world of coding, the possibilities are as boundless as the lines of code we dare to write.</p>
+           </details>
+            <br><br>
+            <a href="https://www.youtube.com/results?search_query=all+about+coding+" target="_blank" class="btn">Read Even More</a>
+            <a href="https://www.instagram.com/avtar_singhchundawat/" target="_blank" class="btn">Contact Us</a>
+            <!-- <button href="https://www.instagram.com/avtar_singhchundawat/" class="btn">Contact Us</button> -->
+        </p>
+</body>
+
+</html>

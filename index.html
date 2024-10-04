@@ -196,7 +196,8 @@
                 <li><a href="https://chat.openai.com/" target="_blank">Services</a></li>
                 <li><a href="https://www.instagram.com/avtar_singhchundawat/" target="_blank">Contact Us</a></li>
                 <div class="search">
-                    <input type="search" name="Search" id="search" placeholder="Search This Website...">
+                    <input type="search" name="Search" id="search" placeholder="Search This Website..."
+                        onkeydown="handleSearch(event)">
                 </div>
             </ul>
         </nav>
@@ -220,6 +221,20 @@
         function toggleMenu() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show');
+        }
+
+        // Handle search functionality
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent form submission
+                const searchQuery = document.getElementById('search').value;
+
+                if (searchQuery.trim() !== '') {
+                    // Open Google search in a small window
+                    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                    window.open(googleSearchUrl, 'GoogleSearchWindow', 'width=800,height=600');
+                }
+            }
         }
     </script>
 </body>
